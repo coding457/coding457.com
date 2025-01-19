@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>vlookup dan hlookup</title>
+</head>
+<body>
+<h2>PENGERTIAN VLOOKUP DAN HLOOKUP</h2>
+<h3>VLOOKUP</h3>
+<blockquote>
+  <cite><mark>VLOOKUP</cite></mark> (Vertikal Lookup) adalah fungsi pencarian data dalam Microsoft Excel yang memungkinkan pengguna mencari nilai dalam tabel atau rentang dan mengembalikan nilai yang sesuai dari kolom lain.
+<br>
+<br>
+Fungsi Utama
+<br>
+1. Mencari nilai dalam tabel atau rentang.
+<br>
+2. Mengembalikan nilai yang sesuai dari kolom lain.
+<br>
+3. Pencarian dilakukan secara vertikal (dari atas ke bawah).
+<br>
+<br>
+Sintaks
+VLOOKUP(lookup_value, table_array, col_index_num, [range_lookup])
+<br>
+<br>
+Parameter
+<br>
+1. *lookup_value*: Nilai yang dicari.<br>
+2. *table_array*: Tabel atau rentang pencarian.<br>
+3. *col_index_num*: Nomor kolom yang mengandung nilai hasil.<br>
+4. *[range_lookup]*: Opsional, TRUE untuk pencarian aproksimasi, FALSE untuk pencarian eksak.<br>
+<br>
+Contoh<br>
+Misalkan Anda memiliki tabel:<br>
+
+| Nama | Usia | Alamat    |<br>
+|-----|------|-----------|<br>
+| Andi| 20   | Jakarta   |<br>
+| Budi| 25   | Bandung   |<br>
+| Cici| 30   | Surabaya  |<br>
+
+Rumus VLOOKUP:<br>
+
+=VLOOKUP("Andi", A2:C4, 2, FALSE)<br>
+
+Hasil: 20<br>
+<br>
+Tips<br>
+1. Pastikan tabel atau rentang pencarian benar.<br>
+2. Gunakan FALSE untuk pencarian eksak.<br>
+3. Gunakan INDEX-MATCH sebagai alternatif yang lebih fleksibel.<br>
+4. Periksa ejaan dan tanda baca.<br>
+5. Pastikan kolom yang dicari ada dalam tabel.<br>
+
+Kekurangan<br>
+1. Sensitif terhadap ejaan dan tanda baca.<br>
+2. Tidak dapat mencari nilai dalam kolom pertama.<br>
+</blockquote>
+<h3>HLOOKUP</h3>
+<blockquote>
+<mark><cite>HLOOKUP</mark></cite> (Horizontal Lookup) adalah fungsi pencarian data dalam Microsoft Excel yang memungkinkan pengguna mencari nilai dalam baris pertama tabel atau rentang dan mengembalikan nilai yang sesuai dari baris lain.<br>
+<br>
+Fungsi Utama<br>
+1. Mencari nilai dalam baris pertama tabel atau rentang.<br>
+2. Mengembalikan nilai yang sesuai dari baris lain.<br>
+3. Pencarian dilakukan secara horizontal (dari kiri ke kanan).<br>
+<br>
+Sintaks<br>
+HLOOKUP(lookup_value, table_array, row_index_num, [range_lookup])<br>
+<br>
+Parameter<br>
+1. *lookup_value*: Nilai yang dicari.<br>
+2. *table_array*: Tabel atau rentang pencarian.<br>
+3. *row_index_num*: Nomor baris yang mengandung nilai hasil.<br>
+4. *[range_lookup]*: Opsional, TRUE untuk pencarian aproksimasi, FALSE untuk pencarian eksak.<br>
+
+Contoh<br>
+Misalkan Anda memiliki tabel:<br>
+
+|  | Januari | Februari | Maret |<br>
+|---|---------|----------|------|<br>
+| Penjualan | 1000    | 1200   | 1500 |<br>
+| Keuntungan | 200     | 300    | 400  |<br>
+<br>
+Rumus HLOOKUP:<br>
+
+=HLOOKUP("Penjualan", A1:C2, 2, FALSE)<br>
+
+Hasil: 1000<br>
+<br>
+Tips<br>
+1. Pastikan tabel atau rentang pencarian benar.<br>
+2. Gunakan FALSE untuk pencarian eksak.<br>
+3. Periksa ejaan dan tanda baca.<br>
+4. Pastikan baris yang dicari ada dalam tabel.<br>
+5. Gunakan INDEX-MATCH sebagai alternatif yang lebih fleksibel.<br>
+
+Kekurangan<br>
+1. Sensitif terhadap ejaan dan tanda baca.<br>
+2. Tidak dapat mencari nilai dalam baris pertama secara vertikal.<br>
+3. Tidak dapat mencari nilai secara vertikal.<br>
+
+
+</blockquote>
+</body>
+</html>
